@@ -6,4 +6,5 @@ public class Interfacec {
   public int  n=7;
   static int  m=7;
   final int  l=7;
+ 
 }

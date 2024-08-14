@@ -1,4 +1,6 @@
 package com.programes.logicalquestion;
+
+
 class demo extends Thread{
 	
 	public void run(){
@@ -17,6 +19,8 @@ public class Multithreading5 {
 		demo t1=new demo();
 		t1.sleep(5000);
 		t1.start();
+		
+		
 
 	}
 

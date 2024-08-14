@@ -10,6 +10,7 @@ public class Search {
 		
 		String [] str=new  String[] {"java","php","mysql"};
 		List<String> list = Arrays.asList(str);
+		System.out.println(list);
 		String search="java";
 		
 		String result=finduingstream(search,list);

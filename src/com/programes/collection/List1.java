@@ -19,6 +19,17 @@ public class List1 {
 	      // print the list
 	      System.out.println(list);
 
+final List<String> list1=new ArrayList();
+list1.add("a");
+list1.add("b");
+		System.out.println(list1);
+
+  
+			//list1=new ArrayList();
+		list1.add("c");
+		list1.add("d");
+			System.out.println(list1);
+
 	}
 
 }

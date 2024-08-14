@@ -9,7 +9,7 @@ class parentss{
 }
 public class Test3 extends parentss{
  
-	public void Test3() {
+         Test3() {
 		System.out.println("test");
 	}
 	public static void main(String[] args) {

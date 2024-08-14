@@ -2,13 +2,13 @@ package com.programes.Oops;
 
 class parents{
 
-	public parents() {
+	 parents() {
 System.out.println("parents");
 	}
 	
 }
 public class Test2 extends parents{
-	Test2() {
+	 Test2() {
 		
 		System.out.println("Test");
 	}

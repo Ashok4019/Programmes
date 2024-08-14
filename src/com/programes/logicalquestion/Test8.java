@@ -1,7 +1,6 @@
 package com.programes.logicalquestion;
 
 public class Test8 {
-
 	static void run(String o) {
 		System.out.println("string");
 	}
@@ -9,9 +8,6 @@ public class Test8 {
 		System.out.println("Object");
 	}
 	public static void main(String[] args) {
-		
 		run(null);
-
 	}
-
 }

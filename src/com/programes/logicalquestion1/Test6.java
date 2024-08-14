@@ -10,17 +10,17 @@ public class Test6 {
         } 
         catch (RuntimeException ex) /* Line 10 */
         { 
-            System.out.print("B"); 
+            System.out.println("B"); 
         } 
         catch (Exception ex1) 
         { 
-            System.out.print("C"); 
+            System.out.println("C"); 
         } 
         finally 
         {
-            System.out.print("D"); 
+            System.out.println("D"); 
         } 
-        System.out.print("E"); 
+        System.out.println("E"); 
     } 
     public static void badMethod() 
     { 

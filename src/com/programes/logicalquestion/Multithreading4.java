@@ -10,6 +10,7 @@ public class Multithreading4 extends Thread {
 	public static void main(String[] args) {
 		Multithreading4 t1 = new Multithreading4(); 
 		Multithreading4 t2 = new Multithreading4(); 
+		 
 	       t1.start();         
 	       // Exception as the thread is already started 
 	       t1.setDaemon(true); 

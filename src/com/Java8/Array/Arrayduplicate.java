@@ -16,7 +16,10 @@ public class Arrayduplicate {
 		List<Integer> list = Arrays.stream(arr).boxed().toList();
 		Set<Integer> set=new HashSet<>();
 		
- List<Integer> collect = list.stream().distinct().collect(Collectors.toList());
+ List<Integer> collect = list.stream()
+		 .distinct()
+		 .collect(Collectors.toList());
+ System.out.println(collect);
  
  Iterator it=collect.iterator();
 while(it.hasNext()) {
@@ -24,9 +27,12 @@ while(it.hasNext()) {
 	 System.out.println(it.next());
  }
 System.out.println("___________________________________________________");
-    List<Integer> collect2 = list.stream().filter(s->set.add(s)).collect(Collectors.toList());
+    List<Integer> collect2 = list.stream()
+    		.filter(s->set.add(s))
+    		.collect(Collectors.toList());
     
     System.out.println(collect2);
+    
 	}
 
 }

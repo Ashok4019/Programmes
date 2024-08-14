@@ -17,6 +17,7 @@ public class Reverse {
 		String str="Ashokkumar";
 		
 		List<String> list = Arrays.asList(str);
+		System.out.println(list);
 		  String collect = list.stream().map(word->
 		  new StringBuilder(word)
 		  .reverse()).collect(Collectors.joining());

@@ -70,11 +70,19 @@ public class Coronapatient {
 				new Patient("virat",26,"fever",1000),
 				new Patient("Rohit",22,"Corona",1000)				
 				);
-		Double collect = list.stream().filter(e->e.getDisease().equalsIgnoreCase("corona"))
-		.collect(Collectors.averagingInt(e->e.getAmount()));
-		System.out.println(collect);
-		
-		
+				
+				  Double collect =
+				  list
+				  .stream()
+				  .filter(e->e.getDisease().equalsIgnoreCase("corona"))
+				  .collect(Collectors.averagingInt(e->e.getAmount()));
+				  System.out.println(collect);
+				 
+               Double collect2 = list
+               .stream()
+               .filter(e->e.getDisease().equalsIgnoreCase("corona"))
+               .collect(Collectors.averagingInt(Patient::getAmount));
+               System.out.println(collect2);
 
 	}
 

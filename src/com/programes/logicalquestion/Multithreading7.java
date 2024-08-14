@@ -36,9 +36,11 @@ public class Multithreading7 {
 				System.out.println("t3 Thread" + i);
 			}
 		});
+
 		t1.start();
 		t2.start();
 		t3.start();
+	
 		//using join methode until another thread completing excecution
 	}
 

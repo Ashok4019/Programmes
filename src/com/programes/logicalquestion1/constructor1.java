@@ -9,6 +9,7 @@ class Rest{
 		System.out.println("hello");
 	};
 	
+	
 }
 
 public class constructor1 {

@@ -12,10 +12,10 @@ public class Startswith {
 	     List<Integer> list=new ArrayList<>();
 	Collections.addAll(list,12,3,15,18,9,4,3);
 	System.out.println(list);
-	List<String> collect = list.stream().map(m->m+"").filter(s->s.startsWith("1")).collect(Collectors.toList());
-	 
-	List<String> list2=list.stream().map(m->m+"").filter(s->s.startsWith("1")).collect(Collectors.toList());
- System.out.println(collect);
+	List<String> collect = list.stream().map(m->m+"")
+			.filter(s->s.startsWith("1")).collect(Collectors.toList());
+
+   System.out.println(collect);
 	}
 
 }

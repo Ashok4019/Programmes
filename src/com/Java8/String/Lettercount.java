@@ -6,14 +6,14 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 
 public class Lettercount {
-
+//frequence of string each character
 	public static void main(String[] args) {
 
-		String str = "ashokkumar";
-		String [] st = str.split("");
+		String str = "ashokk";
 		Map<String, Long> map = Arrays
-		.stream(st)
-		.collect(Collectors.groupingBy(Function.identity(),Collectors.counting()));
+		.stream(str.split(""))
+		.collect(Collectors.groupingBy(Function.identity(),
+				Collectors.counting()));
 		System.out.println(map);
 	}
 

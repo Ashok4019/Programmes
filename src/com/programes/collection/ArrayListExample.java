@@ -10,22 +10,18 @@ import java.util.Map;
 public class ArrayListExample {
 	public static void main(String[] args) {
 
-		 String [] str={"helllo", "welcome"};
-		 List<String> asList = Arrays.asList(str);
-		 //immutable collection
-		 
+		String[] str = { "helllo", "welcome" };
+		List<String> asList = Arrays.asList(str); // immutable collection
+
 		// ArrayList of string
-		ArrayList<String> languageList = new ArrayList<>
-		(Arrays.asList("Java", "C++", "Python", "PHP", "NodeJS"));
+		ArrayList<String> languageList = new ArrayList<>(Arrays.asList("Java", "C++", "Python", "PHP", "NodeJS"));
 		languageList.add("virat");
 		System.out.println(languageList);
-		
+
 		ArrayList<String> list = new ArrayList<>();
-		Collections.addAll(list, "Ashok","ajith","kumar");
+		Collections.addAll(list, "Ashok", "ajith", "kumar");
 		list.add("dhoni");
 		System.out.println(list);
-
-
 
 	}
 }

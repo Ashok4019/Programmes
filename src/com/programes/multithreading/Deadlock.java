@@ -31,7 +31,7 @@ public class Deadlock {
 			public void run() {
 				
 				synchronized (s1) {
-					System.out.println("thread 1 locked 1");
+					System.out.println("thread 2 locked 1");
 					try {
 						Thread.sleep(2000);
 					} catch (InterruptedException e) {
@@ -39,7 +39,7 @@ public class Deadlock {
 						e.printStackTrace();
 					}
 					synchronized (s2) {
-						System.out.println("thread 1 locked 2");
+						System.out.println("thread 2 locked 2");
 					};
 				}
 			}

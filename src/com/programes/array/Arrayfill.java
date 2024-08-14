@@ -6,9 +6,9 @@ public class Arrayfill {
 
 	public static void main(String[] args) {
 	  int arr []= {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1};
-	  Arrays.fill(arr, 1,5,10);
+	  Arrays.fill(arr, 1,4,10);
 	  for(int a:arr) {
-	  System.out.println(a);
+	  System.out.print(a+" ");
 	  }
 	}
 

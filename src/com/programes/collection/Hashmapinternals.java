@@ -16,7 +16,7 @@ public class Hashmapinternals {
 		map.put(s2, 2);
 		map.put(null, 3);
 		map.put(null, 4);
-		map.get(null);
+		
 		System.out.println(map.get(null));
 		/*
 		 * map.put("aaa", 1); map.put("bbb", 2); map.put("ccc", 3); map.put("ddd", 4);
