@@ -36,6 +36,51 @@ public class Wordsearch {
 		if(!flag){
 		  System.out.println("No value");
 		}
+
+--------------------------------------------------------------------------------
+	        boolean flag = false;
+
+        for (String str : arr) {
+
+            if (str.toLowerCase().contains(value.toLowerCase())) {
+
+                flag = true;
+                System.out.println("Search value Found: " + str);
+
+                String[] mapArray = str.split("#");
+
+                for (String strValue : mapArray) {
+                    System.out.println(strValue);
+                }
+
+                System.out.println("----------------");
+            }
+        }
+
+        if (!flag) {
+            System.out.println("Search value NOT Found: " + value);
+        }
+
+        sc.close();
+		  --------------------------------------------------------------------------------------
+
+			          boolean found = Arrays.stream(arr)
+                .filter(str -> str.toLowerCase().contains(value.toLowerCase()))
+                .peek(str -> {
+                    System.out.println("Search value Found: " + str);
+
+                    Arrays.stream(str.split("#"))
+                            .forEach(System.out::println);
+                })
+                .findAny()
+                .isPresent();
+
+        if (!found) {
+            System.out.println("Search value NOT Found: " + value);
+        }
+
+        sc.close();
+
 		}
 
 }
